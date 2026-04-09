@@ -100,7 +100,7 @@ const skills = [
     name: "Docker",
     icon: "https://cdn.simpleicons.org/docker/2496ED",
     state: "en progreso",
-    level: "básico-intermedio",
+    level: "pendiente de aprender",
     description: "Contenedores para entornos de desarrollo consistentes.",
     tags: ["Containers", "DevOps", "Images"]
   },
@@ -108,7 +108,7 @@ const skills = [
     name: "Next.js",
     icon: "https://cdn.simpleicons.org/nextdotjs/000000",
     state: "en progreso",
-    level: "intermedio",
+    level: "pendiente de aprender",
     description: "Framework React con SSR y rutas basadas en archivos.",
     tags: ["SSR", "Routing", "React"]
   },
@@ -116,7 +116,7 @@ const skills = [
     name: "Tailwind CSS",
     icon: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
     state: "dominada",
-    level: "intermedio",
+    level: "pendiente de aprender",
     description: "Framework CSS utility-first.",
     tags: ["Utilities", "Responsive", "Design System"]
   },
