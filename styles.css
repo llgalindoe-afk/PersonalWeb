@@ -394,6 +394,12 @@ main {
   gap: var(--spacing-md);
   padding: var(--spacing-lg) 0;
 }
+.cheatsheets-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg) 0;
+}
 .skill-card {
   flex: 1 1 calc(25% - var(--spacing-md));
   min-width: 220px;
@@ -401,6 +407,9 @@ main {
   padding: var(--spacing-md);
   border-radius: var(--radius-lg);
   border-left: 4px solid var(--accent);
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--transition-base);
 }
 
 .skill-icon {
@@ -412,11 +421,21 @@ main {
   height: 40px;
 }
 
+.skill-name {
+  margin: 0 0 var(--spacing-xs);
+  color: var(--grey-dark);
+  font-size: var(--fs-sm);
+  font-weight: var(--font-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 .skill-card h3 {
   font-size: var(--fs-lg);
   font-weight: var(--font-bold);
   color: var(--primary);
   margin-bottom: var(--spacing-xs);
+  text-align: center;
 }
 
 .skill-level {
