@@ -4,7 +4,7 @@ const header = `
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
       <li><a href="index.html#skills">Skills</a></li>
-      <li><a href="#">Cheatsheets</a></li>
+      <li><a href="index.html#cheatsheets">Cheatsheets</a></li>
       <li><a href="#">Recursos</a></li>
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
