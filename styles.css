@@ -438,6 +438,15 @@ main {
   text-align: center;
 }
 
+.card-link {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.card-link:hover {
+  color: var(--secondary);
+}
+
 .skill-level {
   font-size: var(--fs-xs);
   color: var(--accent);
