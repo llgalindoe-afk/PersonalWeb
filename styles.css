@@ -156,6 +156,15 @@ nav {
   width: 100%;
 }
 
+.nav-links a.active {
+  color: var(--secondary);
+  font-weight: var(--font-bold);
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
 
 /* Dark Mode Toggle Button */
 .dark-mode-toggle {

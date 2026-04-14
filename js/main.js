@@ -7,11 +7,11 @@ import menu from './utils/menu.js';
 const siteHeader = document.querySelector('header');
 const siteFooter = document.querySelector('footer');
 
-if (siteHeader) {
+if (siteHeader && siteHeader.innerHTML.trim() === '') {
   siteHeader.innerHTML = header;
 }
 
-if (siteFooter) {
+if (siteFooter && siteFooter.innerHTML.trim() === '') {
   siteFooter.innerHTML = footer;
 }
 
