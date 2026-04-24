@@ -3,6 +3,16 @@ const menu = () => {
   const navLinks = document.querySelector('.nav-links');
   const darkModeToggle = document.querySelector('.dark-mode-toggle');
 
+  // Highlight current page
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  const links = navLinks.querySelectorAll('a');
+  links.forEach(link => {
+    const href = link.getAttribute('href').split('/').pop() || 'index.html';
+    if (href === currentPath) {
+      link.classList.add('active');
+    }
+  });
+
   if (hamburger) {
     hamburger.addEventListener('click', () => {
       // Toggle clase activa en hamburguesa
@@ -13,7 +23,6 @@ const menu = () => {
     });
 
     // Cerrar menú al hacer click en un enlace (mejor UX en mobile)
-    const links = navLinks.querySelectorAll('a');
     links.forEach(link => {
       link.addEventListener('click', () => {
         hamburger.classList.remove('active');

@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="./imagenes/favicon.png">
-  <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./styles.css">
   <title>CV & Portfolio de Lluís Galindo</title>
 </head>
 <body>
@@ -42,12 +42,62 @@
       <div id="skills-container"></div>
     </section>
 
-    <section class="section">
+       <section class="section">
       <h2>Proyectos en Progreso</h2>
+      <div class="projects-container">
+        <article class="project-card">
+          <h3>CV-Portfolio-DATA</h3>
+          <p>Portfolio personal con integración de APIs, dark mode y diseño responsive. Proyecto desarrollado con HTML5, CSS3 y JavaScript vanilla usando arquitectura modular.</p>
+          <div class="project-tech">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">WeatherAPI</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Ver en GitHub
+            </a>
+            <a href="https:///" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              Ver Demo
+            </a>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section id="cheatsheets" class="section">
       <h2>Cheatsheets</h2>
+      <div class="cheatsheets-container">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5 logo" width="48" height="48">
+          </div>
+          <p class="skill-name">HTML5</p>
+          <h3><a href="documents/Cheatsheet_sprint_1.pdf" target="_blank" rel="noopener noreferrer" class="card-link" onclick="window.open(this.href, '_blank', 'noopener,noreferrer,width=1000,height=700'); return false;">Truquitos</a></h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.simpleicons.org/css/3178C6" alt="CSS3 logo" width="48" height="48">
+          </div>
+          <p class="skill-name">CSS3</p>
+          <h3><a href="documents/CSS3 Cheatsheet_sprint_2_1.pdf" target="_blank" rel="noopener noreferrer" class="card-link" onclick="window.open(this.href, '_blank', 'noopener,noreferrer,width=1000,height=700'); return false;">Truquitos</a></h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript logo" width="48" height="48">
+          </div>
+          <p class="skill-name">JavaScript</p>
+          <h3><a href="documents/%C2%BFC%C3%B3mo%20funciona%20realmente%20Claude%20Code%3F%20.pages" target="_blank" rel="noopener noreferrer" class="card-link" onclick="window.open(this.href, '_blank', 'noopener,noreferrer,width=1000,height=700'); return false;">Truquitos</a></h3>
+        </div>
+        <a href="cheatsheets.html" class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.simpleicons.org/claude/000000" alt="Claude logo" width="48" height="48">
+          </div>
+          <p class="skill-name">Claude</p>
+          <h3>Truquitos</h3>
+        </a>
+      </div>
     </section>
   </main>
   <footer></footer>
