@@ -1,31 +1,55 @@
-<form action="/enviar" method="POST">
-  <legend>Formulario de Contacto</legend><br>
-  <fieldset>
-  <table>
-    
-    <tr>
-      <td><label for="nombre">Nombre:</label></td>
-      <td><input type="text" id="nombre" name="nombre" required></td>
-    </tr>
-    <tr>
-      <td><label for="email">Email:</label></td>
-      <td><input type="email" id="email" name="email" required></td>
-    </tr>
-    <tr>
-      <td><label for="asunto">Asunto:</label></td>
-      <td><input type="text" id="asunto" name="asunto" required></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><label for="mensaje">Mensaje:</label></td>
-      <td><textarea id="mensaje" name="mensaje" rows="4" required></textarea></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><button type="submit">Enviar</button></td>
-    </tr>
-    </table>
-    
-  </table>
-  </fieldset>
-</form>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./imagenes/favicon.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Contacto - CV & Portfolio de Lluís Galindo</title>
+</head>
+<body>
+  <header></header>
 
+  <main>
+    <section class="contact-section">
+      <h1>Contacto</h1>
+      <h2 class="contact-intro">¿Tienes alguna pregunta ? Rellena el formulario y me pondré en contacto contigo lo antes posible.</h2>
+      
+      <div class="contact-container">
+        <form class="contact-form" action="https://formsubmit.co/llgalindoe@gmailo.com" method="POST">
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde CV Portfolio">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="name" placeholder="Tu nombre" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="message" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+          
+          <button type="submit" class="btn-submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer></footer>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
