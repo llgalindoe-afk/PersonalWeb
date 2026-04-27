@@ -5,7 +5,11 @@ const header = `
       <li><a href="about.html">About</a></li>
       <li><a href="index.html#skills">Skills</a></li>
       <li><a href="index.html#cheatsheets">Cheatsheets</a></li>
+<<<<<<< HEAD
       <li><a href="recursos.html">Recursos</a></li>
+=======
+      <li><a href="#">Recursos</a></li>
+>>>>>>> 6c26462b0f742a00040d98f4b283c2778b8ab197
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
     <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Cambiar modo oscuro">
